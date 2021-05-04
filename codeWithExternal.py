@@ -6,3 +6,6 @@ with open("data.json", "r") as f:
 #print(json_object)
 html = json2html.convert(json = json_object)
 print(html)
+f=open("index.html","w")
+f.write(html)
+f.close
